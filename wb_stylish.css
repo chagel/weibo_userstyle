@@ -8,12 +8,16 @@ Installation:
 3. Save and go to check http://weibo.com
 
 Changes log:
-1. remove advs and abstracted areas (Original)
-2. remove logo, top menu and toolbar links
-3. remove preview images in feed
-4. add alternant background color
-
+= 8/31/11 11:23 PM
+	- remove advs and abstracted areas (Original)
+	- remove logo, top menu and toolbar links
+	- remove preview images in feed
+	- add alternant background color
+	
+= 9/18/11 8:23 PM
+	- remove top event tip
 */
+
 ul[class="gnb_l"] { display: none !important; }
 ul[id="ad_container"] { display: none !important; }
 div[id="left_nav_div"] { display: none !important; }
@@ -40,3 +44,4 @@ div[class="header"] { display: none !important; }
 div[class="tsina_gnbarea"] { display: none !important; }
 li[class="MIB_linedot_l"]:hover {background:#eee;}
 div[class="feed_preview"] { display: none !important; }
+div[class="eventTip"] { display: none !important; }
