@@ -8,14 +8,17 @@ Installation:
 3. Save and go to check http://weibo.com
 
 Changes log:
-= 8/31/11 11:23 PM
+== 8/31/11 11:23 PM
 	- remove advs and abstracted areas (Original)
 	- remove logo, top menu and toolbar links
 	- remove preview images in feed
 	- add alternant background color
 	
-= 9/18/11 8:23 PM
+== 9/18/11 8:23 PM
 	- remove top event tip
+
+== 12/07/11 10:08 PM
+	- update for new weibo.com
 */
 
 ul[class="gnb_l"] { display: none !important; }
@@ -45,3 +48,27 @@ div[class="tsina_gnbarea"] { display: none !important; }
 li[class="MIB_linedot_l"]:hover {background:#eee;}
 div[class="feed_preview"] { display: none !important; }
 div[class="eventTip"] { display: none !important; }
+
+div[class="W_main_narrow"]{padding-top:5px;}
+div[class="global_header"]{height:0; }
+div[class="layer_message_box"] {top:0; }
+div[class="logo"] { display: none !important; }
+ul[class="list"] { display: none !important; }
+div[class="search"] { display: none !important; }
+div[class="right"] { display: none !important; }
+div[class="key W_textb"] { display: none !important; }
+div[class="W_rightModule"] { display: none !important; }
+div[class="global_footer global_footer_narrow"] { display: none !important; }
+div[id="pl_common_fun"] { display: none !important; }
+div[id="pl_content_promotetopic"] { display: none !important; }
+div[id="pl_content_homeInterest"] { display: none !important; }
+div[id="pl_relation_recommendPopularUsers"] { display: none !important; }
+div[id="pl_content_interestgroup"] { display: none !important; }
+div[id="pl_content_allInOne"] { display: none !important; }
+div[id=ads_*]] { display: none !important; }
+div[id="pl_content_topic"] { display: none !important; }
+div[id="pl_common_noticeboard"] { display: none !important; }
+div[id="pl_common_help"] { display: none !important; }
+div[id="pl_common_feedback"] { display: none !important; }
+div[id="pl_content_customService"] { display: none !important; }
+div[class="newFilter W_texta"] { display: none !important; }
