@@ -19,8 +19,12 @@ Changes log:
 
 == 12/07/11 10:08 PM
 	- update for new weibo.com
+
+== 12/29/11 12:29 PM
+  - remove adv "登微博桌面 赢手机话费"
 */
 
+div[class="layer_tips layer_tips_yunying"] { display: none !important; }
 ul[class="gnb_l"] { display: none !important; }
 ul[id="ad_container"] { display: none !important; }
 div[id="left_nav_div"] { display: none !important; }
