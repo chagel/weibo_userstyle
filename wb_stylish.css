@@ -1,6 +1,6 @@
 /*
-Weibo.com UserStyle by Mike(http://weibo.com/chagel) and original from:
-http://userstyles.org/styles/51818/theme
+[Neat Weibo]
+Weibo.com UserStyle by Chagel(@滴博Mike).
 
 Installation:
 1. Install Stylish for your Chrome or Firefox.
@@ -8,71 +8,57 @@ Installation:
 3. Save and go to check http://weibo.com
 
 Changes log:
-== 8/31/11 11:23 PM
+
+== 2011-08-31
 	- remove advs and abstracted areas (Original)
 	- remove logo, top menu and toolbar links
 	- remove preview images in feed
 	- add alternant background color
 	
-== 9/18/11 8:23 PM
+== 2011-09-18
 	- remove top event tip
 
-== 12/07/11 10:08 PM
+== 2011-12-07
 	- update for new weibo.com
 
-== 12/29/11 12:29 PM
+== 2011-12-29
   - remove adv "登微博桌面 赢手机话费"
+
+== 2012-10-19
+- For v5 
+
 */
 
-div[class="layer_tips layer_tips_yunying"] { display: none !important; }
-ul[class="gnb_l"] { display: none !important; }
-ul[id="ad_container"] { display: none !important; }
-div[id="left_nav_div"] { display: none !important; }
-div[class="right"] { display: none !important; }
-div[id="medal_box"] { display: none !important; }
-div[class="widgetIntroduce widgetH2"] { display: none !important; }
-div[id="ads_35"] { display: none !important; }
-div[name="app4"] { display:none !important; }
-div[name="app20"] { display:none !important; }
-div[name="app5"] { display:none !important; }
-div[name="app6"] { display:none !important; }
-div[name="app10003"] { display:none !important; }
-div[id="ads_36"] { display:none !important; }
-div[id="ads_37"] { display:none !important; }
-div[class="f_pro"] { display:none !important; }
-div[class="rightTxtList"] { display:none !important; }
-div[id="ads_bottom_1"] { display:none !important; }
-div[id="bottomborder"] { display:none !important; }
-div[id=*pully_list"] { display: none !important; }
-div[class=*missionBox"] { display: none !important; }
+/* top menu */
+.gn_nav, .gn_search,
+#pl_leftnav_app,
+div[node-type="member"],
 
-div[id="pully_list"] { display: none !important; }
-div[class="header"] { display: none !important; }
-div[class="tsina_gnbarea"] { display: none !important; }
-li[class="MIB_linedot_l"]:hover {background:#eee;}
-div[class="feed_preview"] { display: none !important; }
-div[class="eventTip"] { display: none !important; }
 
-div[class="W_main_narrow"]{padding-top:5px;}
-div[class="global_header"]{height:0; }
-div[class="layer_message_box"] {top:0; }
-div[class="logo"] { display: none !important; }
-ul[class="list"] { display: none !important; }
-div[class="search"] { display: none !important; }
-div[class="right"] { display: none !important; }
-div[class="key W_textb"] { display: none !important; }
-div[class="W_rightModule"] { display: none !important; }
-div[class="global_footer global_footer_narrow"] { display: none !important; }
-div[id="pl_common_fun"] { display: none !important; }
-div[id="pl_content_promotetopic"] { display: none !important; }
-div[id="pl_content_homeInterest"] { display: none !important; }
-div[id="pl_relation_recommendPopularUsers"] { display: none !important; }
-div[id="pl_content_interestgroup"] { display: none !important; }
-div[id="pl_content_allInOne"] { display: none !important; }
-div[id=ads_*]] { display: none !important; }
-div[id="pl_content_topic"] { display: none !important; }
-div[id="pl_common_noticeboard"] { display: none !important; }
-div[id="pl_common_help"] { display: none !important; }
-div[id="pl_common_feedback"] { display: none !important; }
-div[id="pl_content_customService"] { display: none !important; }
-div[class="newFilter W_texta"] { display: none !important; }
+/* middle */
+.title_area,
+#pl_content_publisherTop,
+div[node-type="recommendTopic"],
+#pl_content_biztips,
+div[node-type="feed_nav"],
+
+/* right sidebar */
+#WB_webim,
+#pl_rightmod_yunying,
+#trustPagelet_recom_interestv5,
+#pl_rightmod_ads35,
+div[id^="trustPagelet_"],
+#pl_rightmod_ads36,
+#pl_rightmod_vservice,
+#pl_rightmod_noticeboard,
+
+/* footer */
+.global_footer
+
+ { display:none !important; }
+
+/* header hack */
+.WB_global_nav .gn_bg {background: ''; height: 20px}
+
+/* sidebar hack */
+.W_main_r {width: 0px}
