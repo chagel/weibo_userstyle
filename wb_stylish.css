@@ -22,11 +22,16 @@ Changes log:
 	- update for new weibo.com
 
 == 2011-12-29
-  - remove adv "登微博桌面 赢手机话费"
+	- remove adv "登微博桌面 赢手机话费"
 
 == 2012-10-19
-- For v5 
+	- For v5 
 
+== 2012-10-19
+	- 三栏变成两栏
+	- 转发内容字数控制一行
+	- 头像圆角
+	- 去除背景图片竖条
 */
 
 /* top menu */
@@ -59,6 +64,53 @@ div[id^="trustPagelet_"],
 
 /* header hack */
 .WB_global_nav .gn_bg {background: ''; height: 20px}
+
+/* content img and font size*/
+.WB_feed .chePicMin img{
+	width:30px;
+}
+.WB_feed .WB_text{
+	font-size:10.5pt;
+}
+
+/* repost length limit */
+.WB_media_expand .WB_text{
+	font-size: 12px;
+	line-height: 19px;
+	width:450px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+/* remove bg and adjust content body width*/
+.W_main{
+background-color:#fff;
+background-image:url('http://');
+}
+
+.W_main_a{
+background-color:#f6f6f6;
+}
+
+.W_main_c{
+width:100%;
+}
+
+.WB_feed .WB_screen{
+margin:0;
+margin-right: 780px;
+}
+
+.W_miniblog{
+padding-top:30px
+}
+
+/* radius avatar */
+.WB_feed .WB_face img{
+border-radius: 5px;
+}
+
 
 /* sidebar hack */
 .W_main_r {width: 0px}
