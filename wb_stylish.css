@@ -77,10 +77,15 @@ div[id^="trustPagelet_"],
 .WB_media_expand .WB_text{
 	font-size: 12px;
 	line-height: 19px;
-	width:450px;
+/*	width:450px;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	white-space:nowrap;
+	white-space:nowrap;*/
+}
+
+/* hide names */
+div.WB_info {
+	display: none;
 }
 
 /* remove bg and adjust content body width*/
